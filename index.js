@@ -18,8 +18,60 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
-function init() {}
+// Create a function to initialize app
+function init() {
+    inquirer.prompt([
+        {
+            type: 'input',
+            message: questions[0],
+            name: 'title'
+        },
+        {
+            type: 'input',
+            message: questions[1],
+            name: 'Description'
+        },
+        {
+            type: 'input',
+            message: questions[2],
+            name: 'installation'
+        },
+        {
+            type: 'input',
+            message: questions[3],
+            name: 'usage'
+        },
+        {
+            type: 'input',
+            message: questions[4],
+            name: 'contributing'
+        },
+        {
+            type: 'input',
+            message: questions[5],
+            name: 'tests'
+        },
+        {
+            type: 'list',
+            message: questions[6],
+            name: 'license',
+            choices: []
+        },
+        {
+            type: 'input',
+            message: questions[7],
+            name: 'github'
+        },
+        {
+            type: 'input',
+            message: questions[8],
+            name: 'email'
+        }
+    ]).then((data) => {
+        const fileName = `${data.name.toLowerCase().split(' ').join('_')}-README.md`;
+        writeToFile(fileName, data);
+    });
+}
 
 // Function call to initialize app
 init();

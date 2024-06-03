@@ -21,7 +21,10 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (!license) {
     return '';
-  } else {}
+  } else {
+    const licenseLink = renderLicenseLink(license);
+    return `This application is covered under the [${license}](${licenseLink}) license.`;
+  }
 }
 
 // TODO: Create a function to generate markdown for README

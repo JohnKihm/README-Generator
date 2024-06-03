@@ -25,6 +25,8 @@ Go to the GitHub page at [https://github.com/JohnKihm/README-Generator](https://
 
 To use the README Generator open the command line, navigate to the directory containing the files, and enter the command 'node index.js'. Answer each prompt that appears and if you see the message 'Success!' your README has been successfully generated. Look for a new file named the title you entered followed by '-README.md'.
 
+Follow the video guide [here](https://drive.google.com/file/d/1VR3BuKpdXejg4TYMFVdKVZeCjRL2f38T/view?usp=sharing)
+
 ## License
 
 This application is covered under the [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/) license.

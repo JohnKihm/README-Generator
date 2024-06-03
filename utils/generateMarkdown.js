@@ -4,7 +4,7 @@ function renderLicenseBadge(license) {
   if (!license) {
     return '';
   } else {
-    return `https://img.shields.io/badge/${license.split(' ').join('_')}-8A2BE2`
+    return `https://img.shields.io/badge/License-${license.split(' ').join('_')}-blue.svg`
   }
 }
 
@@ -39,10 +39,11 @@ function renderLicenseSection(license) {
 // Create a function to generate markdown for README
 function generateMarkdown(data) {
   const licenseBadge = renderLicenseBadge(data.license);
+  const licenseLink = renderLicenseLink(data.license);
   const licenseSection = renderLicenseSection(data.license);
   return `# ${data.title}
 
-  ![license badge](${licenseBadge})
+  [![License](${licenseBadge})](${licenseLink})
   
   ## Description
   
@@ -82,7 +83,7 @@ function generateMarkdown(data) {
   
   ## Questions
   
-  You can find my other projects on [GitHub](https://github.com/${data.github})
+  You can find my other projects on [GitHub](https://github.com/${data.github}).
   
   For additional questions you can reach me at [${data.email}](mailto:${data.email}).
   `;

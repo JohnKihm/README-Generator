@@ -1,14 +1,14 @@
-# ${title}
+# ${data.title}
 
-${licenseBadge}
+![license badge](${licenseBadge})
 
 ## Description
 
-${description}
+${data.description}
 
 ## Table of Contents
 
-- [${title}](#title)
+- [${data.title}](#datatitle)
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
@@ -20,26 +20,26 @@ ${description}
 
 ## Installation
 
-${installation}
+${data.installation}
 
 ## Usage
 
-${usage}
+${data.usage}
 
 ## License
 
-This application is covered under the ${license} license.
+${licenseSection}
 
 ## Contributing
 
-${contributing}
+${data.contributing}
 
 ## Tests
 
-${tests}
+${data.tests}
 
 ## Questions
 
-[GitHub](https://github.com/${github})
+You can find my other projects on [GitHub](https://github.com/${data.github})
 
-For additional questions you can reach me at [${email}](mailto:${email}).
+For additional questions you can reach me at [${data.email}](mailto:${data.email}).

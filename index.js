@@ -29,7 +29,7 @@ function init() {
         {
             type: 'input',
             message: questions[1],
-            name: 'Description'
+            name: 'description'
         },
         {
             type: 'input',

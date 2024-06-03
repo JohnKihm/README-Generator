@@ -76,7 +76,7 @@ function init() {
             name: 'email'
         }
     ]).then((data) => {
-        const fileName = `${data.name.toLowerCase().split(' ').join('_')}-README.md`;
+        const fileName = `${data.title.toLowerCase().split(' ').join('_')}-README.md`;
         writeToFile(fileName, data);
     });
 }

@@ -50,7 +50,7 @@ function generateMarkdown(data) {
   
   ## Table of Contents
   
-  - [${data.title}](#datatitle)
+  - [${data.title}](#${data.title.toLowerCase().split(' ').join('-')})
     - [Description](#description)
     - [Table of Contents](#table-of-contents)
     - [Installation](#installation)
